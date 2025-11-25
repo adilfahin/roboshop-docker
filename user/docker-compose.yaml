@@ -1,10 +1,11 @@
+
 services:
-  mongodb:
-    build: ./mongodb
-    image: joindevops/mongodb:v1
+  mongodb: 
+    image: mongodb:v1
     container_name: mongodb
-  networks:
+
+networks:
   default:
-    #river: bridge
-    name: roboshop
-    external: false # true if you have created network manually using docker network command
+  driver: bridge
+  name: roboshop
+  external: false
