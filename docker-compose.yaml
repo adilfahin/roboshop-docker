@@ -18,7 +18,7 @@ services:
     image: mysql:v1
     container_name: mysql
     volumes:
-    - mysql:/var/lib/mysql
+      - mysql:/var/lib/mysql
   rabbitmq:
     image: rabbitmq:3
     container_name: rabbitmq
@@ -63,7 +63,6 @@ services:
     - cart
     - shipping
     - payment
-
 networks:
   default:
     driver: bridge
