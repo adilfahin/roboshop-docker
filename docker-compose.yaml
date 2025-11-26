@@ -64,8 +64,6 @@ services:
     - shipping
     - payment
 
-  
-  
 networks:
   default:
     driver: bridge
